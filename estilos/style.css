@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: #E2D8FF;
+    --cor02: #29C0FF;
+    --cor03: #297CFF;
+    --cor04: #2939FF;
+    --cor05: #A429FF;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+    background-color: #A429FF;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 500px;
+    background-color: #E2D8FF;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    background: #A429FF url(../imagens/pexels-anni-roenkae-3418400.jpg);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+
+}
+
+section#login > div#formulario {
+    padding: 10px;
+    display: block;
+
+}
+
